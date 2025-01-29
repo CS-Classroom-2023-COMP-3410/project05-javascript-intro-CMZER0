@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.settings, .trainer, .results {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#targetString {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#inputField {
+    width: 100%;
+    height: 100px;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#inputField.error {
+    border-color: red;
+}
+
+#feedback {
+    font-size: 1rem;
+    color: red;
+}
+
+.results {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+/* Highlight incorrect characters */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Highlight remaining untyped characters */
+.remaining {
+    color: gray;
+}

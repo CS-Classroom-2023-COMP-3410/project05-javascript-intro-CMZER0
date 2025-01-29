@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualization Tool</title>
+    <link rel="stylesheet" href="css/sorting.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sorting Visualization Tool</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <label for="algorithm">Choose Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+            </select>
+
+            <label for="speed">Animation Speed:</label>
+            <input type="range" id="speed" min="1" max="100" value="50">
+
+            <button id="generateArray">Generate Array</button>
+            <button id="sortArray">Start Sorting</button>
+            <button id="resetArray">Reset</button>
+        </section>
+        <section class="visualizer">
+            <div id="arrayContainer"></div>
+        </section>
+        <section class="commentary">
+            <p id="explanation">Select an algorithm and press "Start Sorting" to begin.</p>
+        </section>
+    </main>
+    <script src="js/sorting.js"></script>
+</body>
+
+</html>

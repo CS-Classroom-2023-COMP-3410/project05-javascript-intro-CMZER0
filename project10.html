@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Trainer</title>
+    <link rel="stylesheet" href="css/trainer.css">
+</head>
+
+<body>
+    <header>
+        <h1>Customizable Keyboard Trainer</h1>
+    </header>
+    <main>
+        <section class="settings">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (short words)</option>
+                <option value="medium">Medium (longer words)</option>
+                <option value="hard">Hard (special characters)</option>
+            </select>
+            <button id="startTrainer">Start Training</button>
+        </section>
+
+        <section class="trainer">
+            <p id="targetString">Click "Start Training" to begin</p>
+            <textarea id="inputField" placeholder="Type here..." disabled></textarea>
+            <p id="feedback"></p>
+        </section>
+
+        <section class="results">
+            <p id="summary">Results will appear here after you finish typing.</p>
+            <button id="restartTrainer" disabled>Restart</button>
+        </section>
+    </main>
+    <script src="js/trainer.js"></script>
+</body>
+
+</html>
